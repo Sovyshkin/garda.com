@@ -11,10 +11,10 @@ const { t } = useI18n();
     <div class="left" data-aos="zoom-in-right">
       <h1>{{ t("block_1_text_h1") }}</h1>
       <p>{{ t("block_1_text_p") }}</p>
-      <button class="open">
+      <a class="open" href="https://t.me/gardawallet_bot/app" target="_blank">
         {{ t("open_wallet") }}
         <img src="../../assets/open.svg" alt="open_wallet" />
-      </button>
+      </a>
       <div class="tg">
         <img src="../../assets/telegram.svg" alt="" />
         <span>Telegram</span>
