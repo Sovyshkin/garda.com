@@ -96,13 +96,11 @@ h1 {
     height: 72px;
   }
 
+}
+
+@media (max-width: 768px) {
   .wallet-container {
-    position: absolute;
-    bottom: 80px;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
 }
