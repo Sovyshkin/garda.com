@@ -8,9 +8,9 @@ const route = useRoute();
 const routeName = ref('')
 if (route.name == 'aml') {
     routeName.value = t('policy_aml')
-} else if (route.name == 'terms') {
+} else if (route.name == 'terms_of_use') {
     routeName.value = t('terms_of_use')
-} else if (route.name == 'policy') {
+} else if (route.name == 'privacy_policy') {
     routeName.value = t('privacy_policy')
 }
 </script>
