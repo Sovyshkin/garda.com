@@ -12,18 +12,18 @@ const { t } = useI18n();
         <h2>{{ t('block_3_text_h2_tg') }}</h2>
         <p>{{ t('block_3_text_p_tg') }}</p>
       </div>
-      <img class="ant" src="../../assets/antarctic.png" alt="">
+      <img class="ant" src="../../assets/block_3_1.png" alt="">
     </div>
     <div class="wrap-blocks">
       <div class="block-item" data-aos="flip-left" data-aos-anchor-placement="center-center">
         <h2>{{ t('block_3_text_h2_aml') }}</h2>
         <p>{{ t('block_3_text_p_aml') }}</p>
-        <img class="ant2" src="../../assets/antarctic.png" alt="">
+        <img class="ant2" src="../../assets/block_3_2.png" alt="">
       </div>
       <div class="block-item" data-aos="flip-right"  data-aos-anchor-placement="center-center">
         <h2>{{ t('block_3_text_h2_safe') }}</h2>
         <p>{{ t('block_3_text_p_safe') }}</p>
-        <img class="ant2" src="../../assets/antarctic.png" alt="">
+        <img class="ant2" src="../../assets/block_3_3.png" alt="">
       </div>
     </div>
   </div>
@@ -52,6 +52,7 @@ const { t } = useI18n();
   border-radius: 20px;
   padding: 64px 64px 0 64px;
   flex-direction: column;
+  justify-content: space-between;
   gap: 12px;
 }
 

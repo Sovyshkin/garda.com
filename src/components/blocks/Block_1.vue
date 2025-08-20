@@ -67,7 +67,8 @@ const { t } = useI18n();
 }
 
 .right img {
-  transform: translateY(100px);
+  transform: translateY(136px);
+  max-width: 380px;
 }
 
 .create_wallet {
@@ -148,6 +149,10 @@ p {
     width: 100%;
     padding: 40px 24px;
     max-height: none;
+  }
+
+  .right {
+    display: none;
   }
 
   .right {

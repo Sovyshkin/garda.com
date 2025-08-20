@@ -14,7 +14,9 @@ const { t } = useI18n();
         <img src="../../assets/open.svg" alt="open_wallet" />
       </a>
     </div>
-    <img class="ant" src="../../assets/antarctic.png" alt="" />
+    <div class="wrap-img">
+      <img class="ant" src="../../assets/block_6.png" alt="" />
+    </div>
   </div>
 </template>
 <style scoped>
@@ -25,21 +27,32 @@ const { t } = useI18n();
   border-radius: 20px;
   padding: 64px 64px 0 64px;
   justify-content: space-between;
-  padding-top: 128px;
   gap: 12px;
   box-sizing: border-box;
+  max-height: 440px;
+   overflow: hidden;
+  position: relative;
 }
 
 .wrap-text {
+  padding-top: 64px;
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
+.wrap-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
 .ant {
-  max-height: 387px;
-  max-width: 372px;
+  max-height: 608px;
+  max-width: 299px;
   height: auto;
   width: auto;
 }
@@ -85,6 +98,10 @@ p {
   .block {
     padding: 80px 40px 0 40px;
     padding-top: 100px;
+  }
+
+  .wrap-text {
+    padding-top: 0;
   }
   
   h2 {
