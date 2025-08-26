@@ -15,7 +15,7 @@ const companies = ref([
 ]);
 
 const documents = ref([
-  { id: "license", name: t("license") },
+  // { id: "license", name: t("license") },
   { id: 'terms_of_use', name: t('terms_of_use') },
   { id: "privacy_policy", name: t("privacy_policy") },
   { id: "policy_aml", name: t("policy_aml") },
@@ -25,11 +25,8 @@ const documents = ref([
 const messengers = ref([
   {
     image: "tg_footer",
-    name: "Telegram",
-  },
-  {
-    image: "tg_footer",
-    name: "Telegram",
+    name: "@gardawallet_bot",
+    href: 'https://t.me/gardawallet_bot/app'
   },
 ]);
 
@@ -37,9 +34,9 @@ const setActiveTab = (tabId) => {
   activeTab.value = tabId;
 };
 
-const goHome = () => {
+const goRoute = (name) => {
   try {
-    router.push("/");
+    router.push({name});
   } catch (err) {}
 };
 
@@ -59,7 +56,7 @@ const scrollToBottom = (name) => {
       <div class="wrap-logo">
         <img
           class="logo"
-          @click="goHome()"
+          @click="goRoute('main')"
           src="../assets/logo_footer.svg"
           alt=""
         />
@@ -68,7 +65,7 @@ const scrollToBottom = (name) => {
       <div class="footer-item">
         <h3>{{ t('documents') }}</h3>
         <nav>
-          <li class="nav-item" @click="scrollToBottom(item.id)" v-for="item in documents" :key="item.id">
+          <li class="nav-item" @click="goRoute(item.id)" v-for="item in documents" :key="item.id">
             {{ item.name }}
           </li>
         </nav>
@@ -84,10 +81,10 @@ const scrollToBottom = (name) => {
       <div class="footer-item">
         <h3>{{ t('messengers') }}</h3>
         <nav>
-          <li class="nav-item" @click="scrollToBottom(messenger.id)" v-for="messenger in messengers" :key="messenger.id">
+          <a class="nav-item" v-for="messenger in messengers" :key="messenger.id" :href="messenger.href" target="_blank">
             <img :src="`/assets/${messenger.image}.svg`" :alt="messenger.image">
             <span>{{ messenger.name }}</span>
-          </li>
+          </a>
         </nav>
       </div>
     </div>

@@ -6,12 +6,13 @@ const { t } = useI18n();
 const messengers = ref([
   {
     image: "telegram",
-    name: "Telegram",
+    name: "@gardawallet_bot",
+    href: 'https://t.me/gardawallet_bot/app'
   },
-  {
-    image: "telegram",
-    name: "Telegram",
-  },
+  // {
+  //   image: "telegram",
+  //   name: "Telegram",
+  // },
 ]);
 </script>
 
@@ -27,10 +28,10 @@ const messengers = ref([
         <span class="email-value">info@gardawallet.com</span>
       </div>
       <div class="messengers">
-        <div class="messenger" v-for="item in messengers" :key="item.name">
+        <a class="messenger" v-for="item in messengers" :key="item.name" :href="item.href" target="_blank">
           <img :src="`/assets/${item.image}.svg`" alt="" />
           <span>{{ item.name }}</span>
-        </div>
+        </a>
       </div>
     </div>
     <div class="right" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">
@@ -122,6 +123,7 @@ h1 {
   align-items: center;
   gap: 4px;
   opacity: 70%;
+  color: #141414;
 }
 
 .messenger span {
