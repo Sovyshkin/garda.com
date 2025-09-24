@@ -26,7 +26,7 @@ const messengers = ref([
   {
     image: "tg_footer",
     name: "@gardawallet_bot",
-    href: 'https://t.me/gardawallet_bot/app'
+    href: 'https://t.me/gardawallet_bot?startapp='
   },
 ]);
 

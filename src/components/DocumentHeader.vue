@@ -39,7 +39,7 @@ const goHome = () => {
       <h1>{{ routeName }}</h1>
 
       <div class="wallet-container">
-        <a class="open" href="https://t.me/gardawallet_bot/app" target="_blank">{{ t("open_wallet") }}</a>
+        <a class="open" href="https://t.me/gardawallet_bot?startapp=" target="_blank">{{ t("open_wallet") }}</a>
       </div>
     </div>
   </header>

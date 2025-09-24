@@ -11,7 +11,7 @@ const { t } = useI18n();
     <div class="left" data-aos="zoom-in-right">
       <h1>{{ t("block_1_text_h1") }}</h1>
       <p>{{ t("block_1_text_p") }}</p>
-      <a class="open" href="https://t.me/gardawallet_bot/app" target="_blank">
+      <a class="open" href="https://t.me/gardawallet_bot?startapp=" target="_blank">
         {{ t("open_wallet") }}
         <img src="../../assets/open.svg" alt="open_wallet" />
       </a>

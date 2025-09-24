@@ -57,12 +57,12 @@ onUnmounted(() => {
           <li class="nav-item" @click="scrollToBottom('faq')">
             {{ t("block_8_text_h1") }}
           </li>
-          <a class="open" href="https://t.me/gardawallet_bot/app" target="_blank">{{ t("open_wallet") }}</a>
+          <a class="open" href="https://t.me/gardawallet_bot?startapp=" target="_blank">{{ t("open_wallet") }}</a>
         </ul>
       </nav>
 
       <div class="wallet-container">
-        <a class="open" href="https://t.me/gardawallet_bot/app" target="_blank">{{ t("open_wallet") }}</a>
+        <a class="open" href="https://t.me/gardawallet_bot?startapp=" target="_blank">{{ t("open_wallet") }}</a>
       </div>
 
       <button 

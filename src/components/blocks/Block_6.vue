@@ -9,7 +9,7 @@ const { t } = useI18n();
     <div class="wrap-text">
       <h2>{{ t("block_3_text_h2_tg") }}</h2>
       <p>{{ t("block_3_text_p_tg") }}</p>
-      <a class="open" href="https://t.me/gardawallet_bot/app" target="_blank">
+      <a class="open" href="https://t.me/gardawallet_bot?startapp=" target="_blank">
         {{ t("open_wallet") }}
         <img src="../../assets/open.svg" alt="open_wallet" />
       </a>
