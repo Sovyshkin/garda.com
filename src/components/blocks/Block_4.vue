@@ -14,7 +14,7 @@ const { t } = useI18n();
       <p>{{ t("block_4_text_p") }}</p>
     </div>
     <div class="wrap-img">
-      <img src="../../assets/block_4.png" alt="" />
+      <img src="../../assets/block_4.svg" alt="" />
     </div>
   </div>
 </template>
@@ -68,19 +68,13 @@ p {
 
 .wrap-img {
   width: 100%;
-  max-width: 800px;
-  max-height: 400px;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  border-radius: 20px;
+  justify-content: center;
 }
 
 .wrap-img img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
+  height: 500px;
 }
 
 /* Планшеты (768px и меньше) */
@@ -97,11 +91,6 @@ p {
   p {
     font-size: 17px;
     line-height: 22px;
-  }
-  
-  .wrap-img {
-    max-height: 350px;
-    border-radius: 16px;
   }
 }
 
@@ -126,11 +115,6 @@ p {
     line-height: 20px;
   }
   
-  .wrap-img {
-    max-height: 250px;
-    border-radius: 12px;
-  }
-  
   .wrap-text {
     gap: 8px;
   }
@@ -147,9 +131,6 @@ p {
     font-size: 14px;
     line-height: 18px;
   }
-  
-  .wrap-img {
-    max-height: 200px;
-  }
+
 }
 </style>

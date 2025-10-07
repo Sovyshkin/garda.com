@@ -38,7 +38,7 @@ const { t } = useI18n();
       </div>
     </div>
     <div class="right" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">
-      <img src="../../assets/block_4.png" alt="" />
+      <img src="../../assets/block_7.svg" alt="" />
     </div>
   </div>
 </template>
@@ -64,16 +64,14 @@ const { t } = useI18n();
 }
 
 .right {
-  max-height: 490px;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  border-radius: 20px;
+  justify-content: center;
 }
 
 .right img {
-  width: 100%;
   height: auto;
+  height: 490px;
   object-fit: cover;
   object-position: center;
 }
@@ -180,10 +178,6 @@ h1 {
     width: 100%;
   }
   
-  .right {
-    max-height: 400px;
-  }
-  
   h1 {
     font-size: 28px;
     line-height: 32px;
@@ -218,11 +212,6 @@ h1 {
   h1 {
     font-size: 24px;
     line-height: 28px;
-  }
-  
-  .right {
-    max-height: 300px;
-    border-radius: 16px;
   }
   
   .block-item {

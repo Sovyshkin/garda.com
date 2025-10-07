@@ -102,7 +102,7 @@ header {
 
 .logo {
   cursor: pointer;
-  height: 40px;
+  height: 50px;
   width: auto;
   z-index: 1001;
   flex-shrink: 0;

@@ -35,7 +35,7 @@ const messengers = ref([
       </div>
     </div>
     <div class="right" data-aos="zoom-in-left" data-aos-anchor-placement="top-center">
-      <img src="../../assets/block_9_3.png" alt="" />
+      <img src="../../assets/block_9.svg" alt="" />
     </div>
   </div>
 </template>
@@ -68,16 +68,13 @@ const messengers = ref([
 }
 
 .right {
-  max-height: 490px;
-  overflow: hidden;
   display: flex;
   align-items: center;
-  border-radius: 20px;
+  justify-content: center;
 }
 
 .right img {
-  width: 100%;
-  height: auto;
+  height: 490px;
   object-fit: cover;
   object-position: center;
 }
@@ -146,10 +143,6 @@ h1 {
     gap: 24px;
   }
   
-  .right {
-    max-height: 400px;
-  }
-  
   .messenger span {
     font-size: 16px;
   }
@@ -180,12 +173,12 @@ h1 {
     gap: 24px;
   }
   
-  .right {
-    max-height: 350px;
-  }
-  
   .messengers {
     gap: 24px;
+  }
+
+  .right {
+    max-height: 447px;
   }
 }
 
@@ -202,10 +195,6 @@ h1 {
   
   .left {
     gap: 20px;
-  }
-  
-  .right {
-    max-height: 280px;
   }
   
   .messengers {
