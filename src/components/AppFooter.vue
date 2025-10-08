@@ -176,8 +176,8 @@ nav {
 }
 
 .logo {
-  width: 141px;
-  height: 40px;
+  width: 151px;
+  height: 50px;
   cursor: pointer;
 }
 
