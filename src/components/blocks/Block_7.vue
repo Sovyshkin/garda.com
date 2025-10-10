@@ -70,9 +70,10 @@ const { t } = useI18n();
 }
 
 .right img {
+  width: 100%;
   height: auto;
-  height: 490px;
-  object-fit: cover;
+  max-height: 490px;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -197,6 +198,11 @@ h1 {
     height: 48px;
     width: 48px;
   }
+  
+  .right img {
+    max-height: 350px;
+    width: 100%;
+  }
 }
 
 /* Мобильные устройства (480px и меньше) */
@@ -238,6 +244,10 @@ h1 {
   p {
     font-size: 14px;
   }
+  
+  .right img {
+    max-height: 280px;
+  }
 }
 
 /* Очень маленькие мобильные (320px и меньше) */
@@ -263,6 +273,10 @@ h1 {
   
   p {
     font-size: 13px;
+  }
+  
+  .right img {
+    max-height: 240px;
   }
 }
 </style>

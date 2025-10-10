@@ -74,7 +74,11 @@ p {
 }
 
 .wrap-img img {
-  height: 500px;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Планшеты (768px и меньше) */
@@ -91,6 +95,10 @@ p {
   p {
     font-size: 17px;
     line-height: 22px;
+  }
+  
+  .wrap-img img {
+    max-height: 350px;
   }
 }
 
@@ -118,6 +126,10 @@ p {
   .wrap-text {
     gap: 8px;
   }
+  
+  .wrap-img img {
+    max-height: 280px;
+  }
 }
 
 /* Очень маленькие мобильные (320px и меньше) */
@@ -131,6 +143,9 @@ p {
     font-size: 14px;
     line-height: 18px;
   }
-
+  
+  .wrap-img img {
+    max-height: 240px;
+  }
 }
 </style>

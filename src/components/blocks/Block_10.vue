@@ -74,8 +74,10 @@ const messengers = ref([
 }
 
 .right img {
-  height: 490px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 490px;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -177,8 +179,9 @@ h1 {
     gap: 24px;
   }
 
-  .right {
-    max-height: 447px;
+  .right img {
+    max-height: 350px;
+    width: 100%;
   }
 }
 
@@ -208,6 +211,17 @@ h1 {
   
   .email-value {
     font-size: 14px;
+  }
+  
+  .right img {
+    max-height: 280px;
+  }
+}
+
+/* Очень маленькие мобильные устройства (до 320px) */
+@media (max-width: 320px) {
+  .right img {
+    max-height: 240px;
   }
 }
 </style>
