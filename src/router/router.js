@@ -27,6 +27,12 @@ const router = createRouter({
       path: '/documents/cookie',
       component: () => import('../views/documents/cookie.vue'),
       name: "policy_cookie"
+    },
+    {
+      path: '/article/:id',
+      component: () => import('../views/Article.vue'),
+      name: "article",
+      props: true
     }
   ],
 });
