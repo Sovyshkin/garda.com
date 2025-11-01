@@ -141,7 +141,6 @@ const goBack = () => {
 
 .article-image {
   width: 100%;
-  height: 400px;
   margin-bottom: 32px;
   border-radius: 20px;
   overflow: hidden;
@@ -149,13 +148,16 @@ const goBack = () => {
   align-items: center;
   justify-content: center;
   background: #fff;
+  position: relative;
 }
 
 .article-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
   object-position: center;
+  display: block;
 }
 
 .article-meta {
@@ -277,6 +279,10 @@ const goBack = () => {
   .article-text {
     font-size: 17px;
   }
+  
+  .article-image img {
+    max-height: 400px;
+  }
 }
 
 /* Мобильная версия */
@@ -294,9 +300,12 @@ const goBack = () => {
   }
   
   .article-image {
-    height: 250px;
     margin-bottom: 24px;
     border-radius: 16px;
+  }
+  
+  .article-image img {
+    max-height: 300px;
   }
   
   .article-title {
@@ -347,6 +356,10 @@ const goBack = () => {
     font-size: 15px;
   }
   
+  .article-image img {
+    max-height: 250px;
+  }
+  
   .article-cta {
     padding: 24px 20px;
   }
@@ -362,6 +375,13 @@ const goBack = () => {
   .cta-button {
     padding: 14px 24px;
     font-size: 15px;
+  }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 360px) {
+  .article-image img {
+    max-height: 200px;
   }
 }
 </style>
