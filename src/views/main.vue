@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted } from "vue";
 import { useI18n } from "vue-i18n";
+import { updateMetaTags, pageMetaData } from "@/utils/seo.js";
 import AppHeader from "@/components/AppHeader.vue";
 import Block_1 from "@/components/blocks/Block_1.vue";
 import Block_2 from "@/components/blocks/Block_2.vue";
@@ -17,6 +18,9 @@ import AppFooter from "@/components/AppFooter.vue";
 const { t } = useI18n();
 
 onMounted(() => {
+  // Обновляем SEO мета-теги для главной страницы
+  updateMetaTags(pageMetaData.home);
+  
   setTimeout(() => {
     if (window.AOS) {
       window.AOS.refresh();

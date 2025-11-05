@@ -1,8 +1,15 @@
 <script setup>
 import DocumentHeader from "@/components/DocumentHeader.vue";
 import { useRoute } from "vue-router";
+import { onMounted } from 'vue';
+import { updateMetaTags, pageMetaData } from '@/utils/seo.js';
 
 const route = useRoute();
+
+onMounted(() => {
+  // Обновляем SEO мета-теги для Terms страницы
+  updateMetaTags(pageMetaData.terms);
+});
 </script>
 <template>
   <DocumentHeader />

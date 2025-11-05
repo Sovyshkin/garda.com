@@ -1,6 +1,7 @@
 <script setup>
 import { computed, onMounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import { updateMetaTags, getArticleMetaData } from '../utils/seo.js'
 import AppHeader from '../components/AppHeader.vue'
 import AppFooter from '../components/AppFooter.vue'
 
@@ -30,6 +31,11 @@ onMounted(() => {
   if (storedArticle) {
     try {
       articleData.value = JSON.parse(storedArticle)
+      
+      // Обновляем SEO мета-теги для статьи
+      const articleMetaData = getArticleMetaData(articleData.value)
+      updateMetaTags(articleMetaData)
+      
     } catch (e) {
       console.error('Ошибка при загрузке статьи:', e)
       router.push('/') // Перенаправляем на главную если данные повреждены

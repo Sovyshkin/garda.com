@@ -1,0 +1,48 @@
+User-agent: *
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: *.js$
+Disallow: *.vue$
+Disallow: *.ts$
+Disallow: /assets/*.svg$
+Disallow: /assets/*.png$
+Allow: /
+
+# Разрешить индексацию основных страниц
+Allow: /$
+Allow: /documents/aml
+Allow: /documents/terms_of_use
+Allow: /documents/privacy_policy
+Allow: /documents/cookie
+Allow: /article/*
+
+# Запретить индексацию технических файлов
+Disallow: /package.json
+Disallow: /vite.config.js
+Disallow: /jsconfig.json
+Disallow: /.git/
+Disallow: /README.md
+
+# Для Яндекса
+User-agent: Yandex
+Disallow: /src/
+Disallow: /node_modules/
+Allow: /
+
+# Для Google
+User-agent: Googlebot
+Disallow: /src/
+Disallow: /node_modules/
+Allow: /
+
+# Для Bing
+User-agent: Bingbot
+Disallow: /src/  
+Disallow: /node_modules/
+Allow: /
+
+# Указание на карту сайта
+Sitemap: https://gardawallet.com/sitemap.xml
+
+# Дополнительные настройки
+Crawl-delay: 1

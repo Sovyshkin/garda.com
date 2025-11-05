@@ -3,10 +3,14 @@
 import DocumentHeader from '@/components/DocumentHeader.vue'
 import { useRoute } from 'vue-router'
 import { onMounted } from 'vue'
+import { updateMetaTags, pageMetaData } from '@/utils/seo.js'
 
 const route = useRoute()
 
 onMounted(() => {
+  // Обновляем SEO мета-теги для Cookie Policy страницы
+  updateMetaTags(pageMetaData.cookie);
+  
   if (typeof AOS !== 'undefined') {
     AOS.init({
       duration: 800,
